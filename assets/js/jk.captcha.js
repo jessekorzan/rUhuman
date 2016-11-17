@@ -1,4 +1,11 @@
 var rUhuman = (function ($) {
+    // 2016
+    // @jessekorzan
+    // www.emptycan.com
+    //
+    // SIMPLE CAPTCHA
+    // Are you human or bot or what?
+    //
 	var jk = {};
 	jk.init = function(){
         jk.app.view();	
@@ -7,11 +14,13 @@ var rUhuman = (function ($) {
 -------------------------------------------------- */
     jk.app = {
 		config : {
-    		classRef : "ui-form-no-robot",
-    		form : "form",
-    		submit : ".btn"
+    		// hooks to markup 
+    		classRef : "ui-form-no-robot", // match to CSS for required stylings
+    		form : "form", // form that needs captcha
+    		submit : ".btn" // submit button
 		},  
 		view : function () {
+    		// captcha box appended to form
             var _box = '<div class="' + this.config.classRef + '">';
                 _box += '<label><span></span><span></span><i></i>';
                 _box += '<input type="range" max="12" min="2" value="1" required>';
@@ -21,6 +30,7 @@ var rUhuman = (function ($) {
             this.controller();
 		},
 		controller : function() {
+    		// activate submit button if user passes test
     		var _this = this,
     		    _box = $("." + this.config.classRef),
     		    _mathElms = _box.find("label span"),
@@ -39,6 +49,7 @@ var rUhuman = (function ($) {
             });
             
             setInterval(function(){
+                // keep checking for slider value
                 var _chk = Number(_userInput.val());
                 _sliderOutput.html(_chk);
                 if (_chk == Number(_ANSWER)) {
@@ -51,6 +62,7 @@ var rUhuman = (function ($) {
             }, 100);
         },
         init :  function () {
+            // set us up the bomb
             this.view();
         }
     };
