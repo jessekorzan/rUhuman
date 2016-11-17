@@ -4,4 +4,4 @@
 
 ![alt text](https://github.com/jessekorzan/rUhuman/blob/master/assets/img/pMm2ycJPxl.gif "diagram")
 ---
-~~~~ sass goes here ~~~~
+` sass goes here `
