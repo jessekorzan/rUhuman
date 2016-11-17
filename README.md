@@ -7,6 +7,8 @@
 #### CSS: must use ".ui-form-no-robot"
 refer to SASS file: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/_sass/styles.scss)
 
-### JS: include "jk.captcha"
-
+#### JS: include "jk.captcha"
 get it here: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/assets/js/jk.captcha
+
+#### HTML: markup exmaple
+it's all good: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/index.html
