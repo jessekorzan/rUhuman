@@ -1,0 +1,80 @@
+body {
+    background: #fff;
+    color: #444444;
+    font-family: monospace;
+    font-size: 1.25em;   
+}
+
+section {
+    > div:first-child {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 22px;
+        display: block;
+    }
+}
+
+form {
+    input {
+        width: calc(100% - 26px);
+        max-width: 100%;
+        display: block;
+        padding: 12px;
+        margin: 10px 0 22px;
+        border: 1px solid lime;
+    }
+    input[type="submit"] {
+        width: 100%;
+        display: block;
+        border: 0;
+        background: lime;
+        padding: 22px;
+        text-transform: uppercase;
+        transition: all 260ms ease-in-out;
+        &[disabled="disabled"] {
+            background: #cdcdcd;
+            opacity: 0.5;
+        }
+    }
+}
+
+.ui-form-no-robot {
+    background: #cdcdcd;
+    padding: 18px 12px;
+    display: block;
+    margin-top: 22px;
+    text-align: center;
+    transition: all 260ms ease-in-out;
+    &:before {
+        content: "For humans only. Adjust slider.";
+        font-weight: bold;
+    }
+    label {
+        margin: 11px 0 0;
+        display: block !important;
+        i {
+            font-style: normal;
+        }
+        span:first-child {
+            &:after {
+                content: " + ";
+            }
+        }
+        span:nth-child(2) {
+            &:after {
+                content: " = ";
+            }
+        }
+    }
+    input {
+        width: calc(100% - 24px);
+        margin: 8px auto 0;
+        text-align: center;
+    }
+    &.confirmed {
+        background: rgba(lime, 0.25);
+        &:before {
+            content: "Yes! You're a lovely human!";
+        }
+    }
+}
