@@ -7,7 +7,7 @@ Just a small JS file and some CSS. Degrades OK. Easily customized. Very nice for
 #### 1. CSS: must use ".ui-form-no-robot"
 - refer to SASS file: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/_sass/styles.scss)
 
-#### 2. JS: include "jk.captcha"
+#### 2. JS: include "jk.captcha.js"
 - get it here: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/assets/js/jk.captcha.js
 
 #### 3. HTML: markup exmaple
