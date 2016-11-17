@@ -1,5 +1,5 @@
 # rUhuman
-## jk.captcha.js /\/\ A simple captcha alternative. 
+## jk.captcha.js &mdash; A simple captcha alternative. 
 Just a small JS file and some CSS. Degrades OK. Easily customized. Very nice for you.
 
 You need JQUERY to use this.
