@@ -1,3 +1,3 @@
 # rUhuman
 simple captcha alternative
-![alt text](rUhuman/assets/img/pMm2ycJPxl.gif "diagram")
+![alt text](https://github.com/jessekorzan/rUhuman/blob/master/assets/img/pMm2ycJPxl.gif "diagram")
