@@ -7,9 +7,6 @@ var rUhuman = (function ($) {
     // Are you human or bot or what?
     //
 	var jk = {};
-	jk.init = function(){
-        jk.app.view();	
-	};
 /* --------------------------------------------------	
 -------------------------------------------------- */
     jk.app = {
@@ -69,5 +66,5 @@ var rUhuman = (function ($) {
     return jk;
 })(jQuery);
 $(function () {
-	rUhuman.init();
+	rUhuman.app.init();
 });
