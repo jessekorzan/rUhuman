@@ -12,5 +12,5 @@ You need JQUERY to use this.
 #### 2. JS: include "jk.captcha.js"
 - get it here: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/assets/js/jk.captcha.js
 
-#### 3. HTML: markup exmaple
+#### 3. HTML: markup example
 - it's all good: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/index.html
