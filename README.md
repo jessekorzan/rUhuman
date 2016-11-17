@@ -1,6 +1,6 @@
 # rUhuman
 ## jk.captcha.js /// A simple captcha alternative. 
-### Little bit of JS and SASS/CSS is all (and it degrades not too shabby).
+Just a small JS file and some CSS. Degrades OK. Easily customized. Very nice for you.
 
 ![alt text](https://github.com/jessekorzan/rUhuman/blob/master/assets/img/pMm2ycJPxl.gif "diagram")
 ---
