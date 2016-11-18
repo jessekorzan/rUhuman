@@ -21,5 +21,5 @@ _Dependancies: jQuery and mind grapes_
 #### 3. HTML: markup example
 - it's all good: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/index.html
 
-#### 3. HTML: markup example
-- it's all good: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/api.form.php
+#### 3. PHP: example of how to do server-side
+- you down with PHP? https://raw.githubusercontent.com/jessekorzan/rUhuman/master/api.form.php
