@@ -35,7 +35,8 @@ var sUbmit = (function ($) {
         input : function (form) {
             var _values = $(form).serializeArray();
                 _options = {
-                url : "http://code.emptycan.com/api.form.php",
+                url : "//code.emptycan.com/api.form.php",
+                
                 data : _values,
                 callBack : jk.form.output
             }
