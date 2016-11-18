@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<title>Simple Captcha</title>
+	<title>Simple Captcha &mdash; jk.rUhuman.js</title>
     <meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="description" content="">
+	<meta name="description" content="simple javascript jquery catpcha alternative - easy to install">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 	
@@ -13,8 +13,8 @@
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="msapplication-tap-highlight" content="no" />
 	
-	<link rel="stylesheet" href="/assets/css/normalize.css">
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 <body>
@@ -25,23 +25,45 @@
         <form>
             <label>
                 Form Field
-                <input type="text" placeholder="text"/>
+                <input name="field_01" type="text" placeholder="text"/>
             </label>
             <label>
                 Form Field
-                <input type="text" placeholder="text"/>
+                <input name="field_02" type="text" placeholder="text"/>
             </label>
-            <input type="submit" class="btn" value="submit"/>
+            <input type="submit" class="btn" value="human submit"/>
+            <div class="msg">
+                <span>Simulate a sneaky bot (i.e. force disabled="false")</span>
+                <input type="submit" value="bot submit"/>
+            </div>
         </form>
     </div>
 </section>
+<section>    
+    <div>
+        <h2>jk.rUhuman.js — A simple captcha alternative.</h2>
+        <h3>GitHub: <a href="https://github.com/jessekorzan/rUhuman">https://github.com/jessekorzan/rUhuman</a></h3>
+        
+        <p>Degrades OK. Responsive. Easily customized. Very nice for you.</p>
+        <p>Basic input range captcha for HTML forms.</p>
+        <p>Super chill Javascript/jQuery captcha alternative. </p>
+        <h4>Optional: Server-Side Validation</h4>
+        <p>Refer to dummy web service in repo (api.form.php). Shows how jk.rUhuman.js can help forms beat sneakier bots.</p>
+        <footer>
+            <small>Web &mdash; <a href="http://emptycan.com">emptycan.com</a> Twitter &mdash; <a href="https://www.twitter.com/jessekorzan">@jessekorzan</a></small>
+            <small>&copy; 2016 all rights reserved.</small>
+        </footer>
+    </div>
+</section>
+
+
 
 
 <!-- javascript -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
-<script src="/assets/js/jk.rUhuman.js"></script>
-
+<script src="assets/js/jk.rUhuman.js"></script>
+<script src="assets/js/jk.sUbmit.js"></script>
 </body>
 </html>
 
