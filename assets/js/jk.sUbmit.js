@@ -18,6 +18,7 @@ var sUbmit = (function ($) {
             $.ajaxSetup({ async: false, cache: false });
             $.ajax ({
                 //dataType : "json",
+                crossDomain:true,
                 url: options.url,
                 data: options.data,
                 success: function (data) { 
