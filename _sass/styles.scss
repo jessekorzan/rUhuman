@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 // vars
 $spacer : 24px;
+$highlight : #1F5CE6;
 
 // defaults
 body {
-    background: #eaeaea;
+    background: #E0DFE6;
     color: #444444;
     font-family: 'Lora', serif;
     font-size: 1.125em;   
@@ -26,7 +27,7 @@ footer {
     }
 }
 a {
-    color: darken(cyan, 15%);
+    color: darken($highlight, 15%);
 }
 hr {
     border: none;
@@ -53,19 +54,20 @@ form {
         display: block;
         padding: 12px;
         margin: 10px 0 22px;
-        border: 4px solid cyan;
+        border: 4px solid $highlight;
     }
     input[type="submit"] {
         width: 100%;
         display: block;
         border: 0;
-        font-family: 'Open Sans', sans-serif;
-        background: cyan;
+        color: #fff;
+        background: $highlight;
         padding: 22px;
         text-transform: uppercase;
         transition: all 260ms ease-in-out;
         &[disabled="disabled"] {
             background: #cdcdcd;
+            color: #444;
             opacity: 0.25;
         }
     }
@@ -84,7 +86,7 @@ form {
             width: 28px;
             margin-top: -12px;
             border-radius: 100%;
-            background: cyan;
+            background: $highlight;
             cursor: pointer;
             transition: all 260ms ease-in-out;
         }
@@ -96,7 +98,7 @@ form {
             border-radius: 20px;
         }
         &:hover::-webkit-slider-thumb {
-            background: darken(cyan, 10%);
+            background: darken($highlight, 10%);
         }
     }
 }
@@ -147,10 +149,10 @@ form {
         text-align: center;
     }
     &.confirmed {
-        background: lighten(cyan, 43%);
+        background: lighten($highlight, 43%);
         
         ::-webkit-slider-thumb {
-            border-color: lighten(cyan, 43%);
+            border-color: lighten($highlight, 43%);
         }
         
     }
