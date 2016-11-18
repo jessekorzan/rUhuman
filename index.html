@@ -25,13 +25,17 @@
         <form>
             <label>
                 Form Field
-                <input type="text" placeholder="text"/>
+                <input name="field_01" type="text" placeholder="text"/>
             </label>
             <label>
                 Form Field
-                <input type="text" placeholder="text"/>
+                <input name="field_02" type="text" placeholder="text"/>
             </label>
-            <input type="submit" class="btn" value="submit"/>
+            <input type="submit" class="btn" value="human submit"/>
+            <div class="msg">
+                <span>Simulate a sneaky bot (i.e. force disabled="false")</span>
+                <input type="submit" value="bot submit"/>
+            </div>
         </form>
     </div>
 </section>
@@ -43,6 +47,8 @@
         <p>Degrades OK. Responsive. Easily customized. Very nice for you.</p>
         <p>Basic input range captcha for HTML forms.</p>
         <p>Super chill Javascript/jQuery captcha alternative. </p>
+        <h4>Optional: Server-Side Validation</h4>
+        <p>Refer to dummy web service in repo (api.form.php). Shows how jk.rUhuman.js can help forms beat sneakier bots.</p>
         <footer>
             <small>Web &mdash; <a href="http://emptycan.com">emptycan.com</a> Twitter &mdash; <a href="https://www.twitter.com/jessekorzan">@jessekorzan</a></small>
             <small>&copy; 2016 all rights reserved.</small>
@@ -57,7 +63,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
 <script src="assets/js/jk.rUhuman.js"></script>
-
+<script src="assets/js/jk.sUbmit.js"></script>
 </body>
 </html>
 

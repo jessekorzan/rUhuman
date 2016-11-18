@@ -10,8 +10,17 @@ body {
     font-family: 'Lora', serif;
     font-size: 1.125em;   
 }
-h1, h2, h3, h4 {
+h1, h2, h3 {
     margin-bottom: $spacer * 1.5;
+}
+h4 {
+    margin-top: $spacer * 2;
+    margin-bottom: $spacer/2;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+p {
+    line-height: 1.625em;
 }
 footer {
     //display: block;
@@ -36,6 +45,7 @@ hr {
 }
 section {
     padding: $spacer * 2 0;
+    overflow-x: hidden;
     > div {
         max-width: 680px;
         margin: 0 auto;
@@ -65,6 +75,11 @@ form {
         padding: 22px;
         text-transform: uppercase;
         transition: all 260ms ease-in-out;
+        &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
         &[disabled="disabled"] {
             background: #cdcdcd;
             color: #444;
@@ -101,9 +116,21 @@ form {
             background: darken($highlight, 10%);
         }
     }
+    .msg {
+        font-family: monospace;
+        text-align: center;
+        color: #777;
+        
+        input[type="submit"] {
+            background: none;
+            color: $highlight;
+            padding: 0;
+        }
+    }
 }
 
-// rUhuman widget default (must have)
+// rUhuman widget default
+// YOU NEED THIS and match class name in JS app.config
 .ui-form-no-robot {
     display: block;
     transition: all 260ms ease-in-out;
