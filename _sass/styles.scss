@@ -1,57 +1,116 @@
-body {
-    background: #fff;
-    color: #444444;
-    font-family: monospace;
-    font-size: 1.25em;   
-}
+@import url('https://fonts.googleapis.com/css?family=Lora|Oswald:400,700');
+// vars
+$spacer : 24px;
 
+// defaults
+body {
+    background: #eaeaea;
+    color: #444444;
+    font-family: 'Lora', serif;
+    font-size: 1.125em;   
+}
+h1, h2, h3, h4 {
+    margin-bottom: $spacer * 1.5;
+}
+footer {
+    //display: block;
+    margin-top: $spacer * 4;
+    small {
+        font-weight: bolder;
+        display: block;
+        margin-top: $spacer/2;
+        a {
+            text-decoration: none;
+            margin-right: $spacer/2;
+        }
+    }
+}
+a {
+    color: darken(cyan, 15%);
+}
+hr {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    margin: $spacer 0;
+}
 section {
-    > div:first-child {
+    padding: $spacer * 2 0;
+    > div {
         max-width: 680px;
         margin: 0 auto;
-        padding: 22px;
+        padding: $spacer;
         display: block;
+    }
+    &:nth-child(1) {
+        background: #ffffff;
     }
 }
 
 form {
     input {
-        width: calc(100% - 26px);
+        width: calc(100% - #{$spacer + 8px});
         max-width: 100%;
         display: block;
         padding: 12px;
         margin: 10px 0 22px;
-        border: 1px solid lime;
+        border: 4px solid cyan;
     }
     input[type="submit"] {
         width: 100%;
         display: block;
         border: 0;
-        background: lime;
+        font-family: 'Open Sans', sans-serif;
+        background: cyan;
         padding: 22px;
         text-transform: uppercase;
         transition: all 260ms ease-in-out;
         &[disabled="disabled"] {
             background: #cdcdcd;
-            opacity: 0.5;
+            opacity: 0.25;
+        }
+    }
+    input[type="range"] {
+        -webkit-appearance: none;
+        background: transparent;
+        border: 0;
+        width: calc(100% - #{$spacer});
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: 4px solid #fff;
+            height: 28px;
+            width: 28px;
+            margin-top: -12px;
+            border-radius: 100%;
+            background: cyan;
+            cursor: pointer;
+            transition: all 260ms ease-in-out;
+        }
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #cdcdcd;
+            border-radius: 20px;
+        }
+        &:hover::-webkit-slider-thumb {
+            background: darken(cyan, 10%);
         }
     }
 }
 
+// rUhuman widget default (must have)
 .ui-form-no-robot {
-    background: #cdcdcd;
-    padding: 18px 12px;
     display: block;
-    margin-top: 22px;
-    text-align: center;
     transition: all 260ms ease-in-out;
     &:before {
         content: "For humans only. Adjust slider.";
         font-weight: bold;
     }
     label {
-        margin: 11px 0 0;
-        display: block !important;
+        display: block;
         i {
             font-style: normal;
         }
@@ -66,15 +125,33 @@ form {
             }
         }
     }
+    &.confirmed {
+        &:before {
+            content: "Yes! You're a lovely human!";
+        }
+    }
+}
+// skin
+.ui-form-no-robot {
+    background: transparent;
+    border: 1px dashed #999;
+    padding: 18px $spacer/2;
+    margin-top: 22px;
+    text-align: center;
+    label {
+        margin: 11px 0 0;
+    }
     input {
-        width: calc(100% - 24px);
+        width: calc(100% - #{$spacer});
         margin: 8px auto 0;
         text-align: center;
     }
     &.confirmed {
-        background: rgba(lime, 0.25);
-        &:before {
-            content: "Yes! You're a lovely human!";
+        background: lighten(cyan, 43%);
+        
+        ::-webkit-slider-thumb {
+            border-color: lighten(cyan, 43%);
         }
+        
     }
 }
