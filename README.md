@@ -4,9 +4,9 @@
 Chilled out client-side check for humans and bonus options for doing server-side double check.
 A small JS file and some CSS. Degrades OK. Responsive. Easily customized. Very nice for you.
 
-*Demo:* https://jessekorzan.github.io/rUhuman/
+*Demo: https://jessekorzan.github.io/rUhuman/*
 
-_Dependancies: jQuery and _
+_Dependancies: jQuery and mind grapes_
 
 ---
 
