@@ -4,6 +4,9 @@ Just a small JS file and some CSS. Degrades OK. Easily customized. Very nice for
 
 You need JQUERY to use this.
 
+Demo: https://jessekorzan.github.io/rUhuman/
+---
+
 ![alt text](https://github.com/jessekorzan/rUhuman/blob/master/assets/img/pMm2ycJPxl.gif "diagram")
 ---
 #### 1. CSS: must use ".ui-form-no-robot"
