@@ -2,11 +2,11 @@
 ## jk.rUhuman.js &mdash; A simple captcha alternative. 
 A small JS file and some CSS. Degrades OK. Responsive. Easily customized. Very nice for you.
 
-You need JQUERY to use this.
-
 Chilled out client-side check for humans and bonus options for doing server-side double check.
 
 Demo: https://jessekorzan.github.io/rUhuman/
+
+_Dependancies: JQUERY and gumption_
 
 ---
 
