@@ -4,6 +4,8 @@ A small JS file and some CSS. Degrades OK. Responsive. Easily customized. Very n
 
 You need JQUERY to use this.
 
+Chilled out client-side check for humans and bonus options for doing server-side double check.
+
 Demo: https://jessekorzan.github.io/rUhuman/
 
 ---
@@ -18,3 +20,6 @@ Demo: https://jessekorzan.github.io/rUhuman/
 
 #### 3. HTML: markup example
 - it's all good: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/index.html
+
+#### 3. HTML: markup example
+- it's all good: https://raw.githubusercontent.com/jessekorzan/rUhuman/master/api.form.php
